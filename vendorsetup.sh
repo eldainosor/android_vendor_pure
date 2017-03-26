@@ -1,1 +1,2 @@
 add_lunch_combo osprey-userdebug
+add_lunch_combo A6020-userdebug
