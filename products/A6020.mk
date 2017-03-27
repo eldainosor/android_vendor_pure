@@ -19,6 +19,7 @@ include vendor/pure/configs/pure_phone.mk
 $(call inherit-product, device/lenovo/A6020/aosp_A6020.mk)
 
 ifeq ($(WITH_GAPPS),true)
+WITH_GOOGLE_CAMERA := false
 # Inherit arm64 phone gapps
 $(call inherit-product-if-exists, vendor/gapps/arm64-phone-gapps.mk)
 else

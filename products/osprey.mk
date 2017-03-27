@@ -19,6 +19,7 @@ include vendor/pure/configs/pure_phone.mk
 $(call inherit-product, device/motorola/osprey/aosp_osprey.mk)
 
 ifeq ($(WITH_GAPPS),true)
+WITH_GOOGLE_CAMERA := false
 # Inherit arm phone gapps
 $(call inherit-product-if-exists, vendor/gapps/arm-phone-gapps.mk)
 else
